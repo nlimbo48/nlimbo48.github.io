@@ -240,7 +240,7 @@ function buildPayloadMenu() {
       }
       #relapse-payload-menu .payload-grid {
         display:grid !important;
-        grid-template-columns:repeat(3,minmax(0,1fr));
+        grid-template-columns:repeat(2,minmax(0,1fr));
         gap:1rem 2.5rem;
         width:100%;
         max-width:1600px;
@@ -270,8 +270,8 @@ function buildPayloadMenu() {
       #relapse-payload-menu .payload-tile:hover {
         outline:0;
         border:0;
-        background:#5d5d59 !important;
-        color:#dfdfdf !important;
+        background:#000000 !important;
+        color:#fff !important;
         -webkit-text-fill-color:#dfdfdf !important;
       }
       #relapse-payload-menu .payload-tile.sending { opacity:.55; }
@@ -425,15 +425,15 @@ function buildPayloadMenu() {
         info.style.setProperty("-webkit-text-fill-color", "#999", "important");
 
         a.addEventListener("focus", () => {
-            a.style.setProperty("background-color", "#a2a2a6", "important");
-            a.style.setProperty("color", "#202020", "important");
-            a.style.setProperty("-webkit-text-fill-color", "#202020", "important");
-            name.style.setProperty("color", "#202020", "important");
-            name.style.setProperty("-webkit-text-fill-color", "#202020", "important");
-            description.style.setProperty("color", "#444", "important");
-            description.style.setProperty("-webkit-text-fill-color", "#444", "important");
-            info.style.setProperty("color", "#555", "important");
-            info.style.setProperty("-webkit-text-fill-color", "#555", "important");
+            a.style.setProperty("background-color", "#000000", "important");
+            a.style.setProperty("color", "#fff", "important");
+            a.style.setProperty("-webkit-text-fill-color", "#fff", "important");
+            name.style.setProperty("color", "#fff", "important");
+            name.style.setProperty("-webkit-text-fill-color", "#fff", "important");
+            description.style.setProperty("color", "#ccc", "important");
+            description.style.setProperty("-webkit-text-fill-color", "#ccc", "important");
+            info.style.setProperty("color", "#999", "important");
+            info.style.setProperty("-webkit-text-fill-color", "#999", "important");
         });
         a.addEventListener("blur", () => {
             a.style.setProperty("background-color", "#202125", "important");
